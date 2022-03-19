@@ -10,7 +10,8 @@ public class JobAdd : MonoBehaviour
     {
        JobCounter.contador++;
        Destroy(gameObject);
-        Debug.Log(JobCounter.contador);        
+        Debug.Log(JobCounter.contador);    
+        
     }
    
 }

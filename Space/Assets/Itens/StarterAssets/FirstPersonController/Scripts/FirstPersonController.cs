@@ -73,6 +73,8 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+		
+
 		private void Awake()
 		{
 			// get a reference to our main camera
@@ -97,6 +99,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+
 		}
 
 		private void LateUpdate()
@@ -171,10 +174,14 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
-			}
+            }
+           
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+
+			
 		}
 
 		private void JumpAndGravity()
