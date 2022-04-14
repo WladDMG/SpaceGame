@@ -5,13 +5,13 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     [SerializeField]
-    public GameObject gameObjectTela;
-    public GameObject gameObjectUI;
+    public GameObject gameObjectTelaOn;
+    public GameObject gameObjectUIOFF;
     
     public void OnInteraction()
     {
-        gameObjectTela.SetActive(true);
-        gameObjectUI.SetActive(false);
+        gameObjectTelaOn.SetActive(true);
+        gameObjectUIOFF.SetActive(false);
         
     }
 }

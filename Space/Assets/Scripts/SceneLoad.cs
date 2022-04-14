@@ -6,29 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour
 {
-    public void LoadNew()
+    public void LoadMenu()
     {
         SceneManager.LoadScene(1);
     }
-    public void Load1()
+    public void LoadNew()
     {
-        if (JobCounter.contador >= 4)
-        {
-            SceneManager.LoadScene(1);
-        }
+        SceneManager.LoadScene(2);
     }
-    public void Load2()
+    public void Load1()
     {
         if (JobCounter.contador >= 4)
         {
             SceneManager.LoadScene(2);
         }
     }
-    public void Load3()
+    public void Load2()
     {
         if (JobCounter.contador >= 4)
         {
             SceneManager.LoadScene(3);
+        }
+    }
+    public void Load3()
+    {
+        if (JobCounter.contador >= 4)
+        {
+            SceneManager.LoadScene(4);
         }
     }
 }

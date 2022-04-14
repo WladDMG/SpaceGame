@@ -8,7 +8,7 @@ public class PlayerInteractionController : MonoBehaviour
     public float maxDistance = 5;
     public LayerMask interactableLayers;
     public Button interactButton;
-    public Animator anim;
+   
 
 
     private Interactable currentInteractable;
@@ -30,12 +30,7 @@ public class PlayerInteractionController : MonoBehaviour
 
 
     }
-    public void animinteraction()
-    {
-        anim.SetInteger("APONTAR", 1);
-        
-       
-    }
+   
     public void Interact()
     {
         if (currentInteractable)
